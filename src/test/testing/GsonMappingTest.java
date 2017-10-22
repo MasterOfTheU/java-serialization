@@ -16,12 +16,12 @@ public class GsonMappingTest {
 
     @Test
     public void convertToJSON() throws Exception {
-        Assert.assertNotEquals(books, GsonMapping.convertToJSON(books));
+        assertNotEquals(books, GsonMapping.convertToJSON(books));
     }
 
     @Test
     public void convertFromJSON() throws Exception {
-        Assert.assertNotEquals(GsonMapping.convertToJSON(books), GsonMapping.convertFromJSON(GsonMapping.convertToJSON(books)));
+        assertNotEquals(GsonMapping.convertToJSON(books), GsonMapping.convertFromJSON(GsonMapping.convertToJSON(books)));
     }
 
 }
