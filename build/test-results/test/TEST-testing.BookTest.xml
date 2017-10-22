@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.BookTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-22T15:18:40" hostname="brain" time="0.005">
+  <properties/>
+  <testcase name="getAuthorName" classname="testing.BookTest" time="0.001"/>
+  <testcase name="setAuthorName" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getYear" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setGenre" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setTitle" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getGenre" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getTitle" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setYear" classname="testing.BookTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

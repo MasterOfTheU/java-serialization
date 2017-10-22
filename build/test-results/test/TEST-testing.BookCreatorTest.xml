@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.BookCreatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-22T15:18:40" hostname="brain" time="0.044">
+  <properties/>
+  <testcase name="initializeBook" classname="testing.BookCreatorTest" time="0.044"/>
+  <system-out><![CDATA[initializeBook has executed.
+Used memory in megabytes: 2.620590 
+The runtime of method initializeBook() is 39 ms
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

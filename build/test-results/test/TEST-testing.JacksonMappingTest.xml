@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.JacksonMappingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-22T15:18:41" hostname="brain" time="0.952">
+  <properties/>
+  <testcase name="convertFromJSON" classname="testing.JacksonMappingTest" time="0.756"/>
+  <testcase name="convertToJSON" classname="testing.JacksonMappingTest" time="0.026"/>
+  <system-out><![CDATA[initializeBook has executed.
+Used memory in megabytes: 2.342339 
+The runtime of method initializeBook() is 25 ms
+
+initializeBook has executed.
+Used memory in megabytes: 3.258667 
+The runtime of method initializeBook() is 27 ms
+
+BOOK TITLE: War and Peace
+BOOK GENRE: Novel
+AUTHOR NAME: Leo Tolstoy
+YEAR OF PUBLISHING: 1867
+
+BOOK TITLE: Harry Potter and the Philosopher's Stone
+BOOK GENRE: Fantasy
+AUTHOR NAME: J. K. Rowling
+YEAR OF PUBLISHING: 1997
+
+BOOK TITLE: Unknown
+BOOK GENRE: Unknown
+AUTHOR NAME: Unknown
+YEAR OF PUBLISHING: 0
+
+createBooks has executed.
+Used memory in megabytes: 2.298378 
+The runtime of method createBooks() is 83 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{"title":"War and Peace","genre":"Novel","authorName":"Leo Tolstoy","year":1867}
+BOOK #2
+{"title":"Harry Potter and the Philosopher's Stone","genre":"Fantasy","authorName":"J. K. Rowling","year":1997}
+BOOK #3
+{"title":"Unknown","genre":"Unknown","authorName":"Unknown","year":0}
+
+convertToJSON has executed.
+Used memory in megabytes: 5.486412 
+The runtime of method convertToJSON() is 611 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{"title":"War and Peace","genre":"Novel","authorName":"Leo Tolstoy","year":1867}
+BOOK #2
+{"title":"Harry Potter and the Philosopher's Stone","genre":"Fantasy","authorName":"J. K. Rowling","year":1997}
+BOOK #3
+{"title":"Unknown","genre":"Unknown","authorName":"Unknown","year":0}
+
+convertToJSON has executed.
+Used memory in megabytes: 2.627686 
+The runtime of method convertToJSON() is 26 ms
+
+JACKSON DESERIALIZATION
+
+convertFromJSON has executed.
+Used memory in megabytes: 2.998772 
+The runtime of method convertFromJSON() is 118 ms
+
+initializeBook has executed.
+Used memory in megabytes: 2.694916 
+The runtime of method initializeBook() is 24 ms
+
+initializeBook has executed.
+Used memory in megabytes: 2.695549 
+The runtime of method initializeBook() is 78 ms
+
+BOOK TITLE: War and Peace
+BOOK GENRE: Novel
+AUTHOR NAME: Leo Tolstoy
+YEAR OF PUBLISHING: 1867
+
+BOOK TITLE: Harry Potter and the Philosopher's Stone
+BOOK GENRE: Fantasy
+AUTHOR NAME: J. K. Rowling
+YEAR OF PUBLISHING: 1997
+
+BOOK TITLE: Unknown
+BOOK GENRE: Unknown
+AUTHOR NAME: Unknown
+YEAR OF PUBLISHING: 0
+
+createBooks has executed.
+Used memory in megabytes: 2.695030 
+The runtime of method createBooks() is 170 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{"title":"War and Peace","genre":"Novel","authorName":"Leo Tolstoy","year":1867}
+BOOK #2
+{"title":"Harry Potter and the Philosopher's Stone","genre":"Fantasy","authorName":"J. K. Rowling","year":1997}
+BOOK #3
+{"title":"Unknown","genre":"Unknown","authorName":"Unknown","year":0}
+
+convertToJSON has executed.
+Used memory in megabytes: 2.706429 
+The runtime of method convertToJSON() is 26 ms
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
