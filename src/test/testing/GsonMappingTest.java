@@ -1,6 +1,5 @@
 package testing;
 
-import org.junit.Assert;
 import org.junit.Test;
 import serialization.Book;
 import serialization.GsonMapping;
