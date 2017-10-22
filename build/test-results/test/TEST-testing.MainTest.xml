@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testing.MainTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-22T15:18:42" hostname="brain" time="0.26">
-  <properties/>
-  <testcase name="printBooksInfo" classname="testing.MainTest" time="0.089"/>
-  <testcase name="createBooks" classname="testing.MainTest" time="0.074"/>
-  <testcase name="printBooksInfoFailed" classname="testing.MainTest" time="0.097"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

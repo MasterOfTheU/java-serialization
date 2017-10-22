@@ -1,6 +1,5 @@
 package testing;
 
-import org.junit.Assert;
 import org.junit.Test;
 import serialization.Book;
 
@@ -19,7 +18,7 @@ public class BookTest {
         field.setAccessible(true);
         field.set(book, "Terra");
         final String actualResult = book.getTitle();
-        Assert.assertEquals("Terra", actualResult);
+        assertEquals("Terra", actualResult);
     }
 
     @Test
@@ -38,7 +37,7 @@ public class BookTest {
         field.setAccessible(true);
         field.set(book, "Fantasy");
         final String actualResult = book.getGenre();
-        Assert.assertEquals("Fantasy", actualResult);
+        assertEquals("Fantasy", actualResult);
     }
 
     @Test
@@ -57,7 +56,7 @@ public class BookTest {
         field.setAccessible(true);
         field.set(book, "J.K.Rowling");
         final String actualResult = book.getAuthorName();
-        Assert.assertEquals("J.K.Rowling", actualResult);
+        assertEquals("J.K.Rowling", actualResult);
     }
 
     @Test

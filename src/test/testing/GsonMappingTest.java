@@ -1,5 +1,6 @@
 package testing;
 
+import org.junit.Assert;
 import org.junit.Test;
 import serialization.Book;
 import serialization.GsonMapping;
@@ -15,12 +16,12 @@ public class GsonMappingTest {
 
     @Test
     public void convertToJSON() throws Exception {
-        assertNotEquals(books, GsonMapping.convertToJSON(books));
+        Assert.assertNotEquals(books, GsonMapping.convertToJSON(books));
     }
 
     @Test
     public void convertFromJSON() throws Exception {
-        assertNotEquals(GsonMapping.convertToJSON(books), GsonMapping.convertFromJSON(GsonMapping.convertToJSON(books)));
+        Assert.assertNotEquals(GsonMapping.convertToJSON(books), GsonMapping.convertFromJSON(GsonMapping.convertToJSON(books)));
     }
 
 }

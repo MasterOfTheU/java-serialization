@@ -2,16 +2,15 @@ package testing;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
+
+import static org.junit.Assert.*;
 import org.junit.Test;
 import serialization.Book;
 import serialization.JacksonMapping;
 
-
 import java.util.ArrayList;
 
-import static org.junit.Assert.*;
 import static serialization.Main.*;
-
 
 public class JacksonMappingTest {
 

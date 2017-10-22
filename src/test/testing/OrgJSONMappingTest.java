@@ -5,8 +5,8 @@ import serialization.Book;
 import serialization.OrgJSONMapping;
 
 import java.util.ArrayList;
-
 import static org.junit.Assert.*;
+
 import static serialization.Main.createBooks;
 
 public class OrgJSONMappingTest {
