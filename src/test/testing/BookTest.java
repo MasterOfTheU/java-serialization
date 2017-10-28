@@ -75,7 +75,7 @@ public class BookTest {
     public void getYear() throws NoSuchFieldException, IllegalAccessException {
         final Book book = new Book();
         book.setYear(1580);
-        Field field = book.getClass().getDeclaredField("year");
+        Field field = book.getClass().getDeclaredField("yearOfPublication");
         field.setAccessible(true);
         assertEquals(field.get(book), 1580);
     }
@@ -84,7 +84,7 @@ public class BookTest {
     public void setYear() throws NoSuchFieldException, IllegalAccessException {
         final Book book = new Book();
         book.setYear(1990);
-        Field field = book.getClass().getDeclaredField("year");
+        Field field = book.getClass().getDeclaredField("yearOfPublication");
         field.setAccessible(true);
         assertEquals(1990, field.get(book));
     }
