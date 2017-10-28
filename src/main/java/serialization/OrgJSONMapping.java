@@ -43,7 +43,7 @@ public class OrgJSONMapping {
             String jsonString = obj.toString();
             jsonStrings.add(jsonString);
             System.out.printf("BOOK #%d\n", books.indexOf(book)+1);
-            System.out.println(jsonString);
+            System.out.println(obj.toString(2));
         });
 
         System.out.println();
