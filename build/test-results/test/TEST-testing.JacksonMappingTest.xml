@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.JacksonMappingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-28T21:19:30" hostname="brain" time="1.154">
+  <properties/>
+  <testcase name="convertFromJSON" classname="testing.JacksonMappingTest" time="0.996"/>
+  <testcase name="convertToJSON" classname="testing.JacksonMappingTest" time="0.052"/>
+  <system-out><![CDATA[initializeBook has executed.
+Used memory in megabytes: 2.380074 
+The runtime of method initializeBook() is 36 ms
+
+initializeBook has executed.
+Used memory in megabytes: 2.336243 
+The runtime of method initializeBook() is 16 ms
+
+BOOK TITLE: War and Peace
+BOOK GENRE: Novel
+AUTHOR NAME: L. Tolstoy
+YEAR OF PUBLISHING: 1867
+=====AUTHOR INFO===== 
+Full Name: Leo Tolstoy
+POB: Yasnaya Polyana, Russian Empire
+Year of Birth: 1828
+=====================
+BOOK ISBN NUMBER: 978-5-699-08860-7
+
+BOOK TITLE: Harry Potter and the Philosopher's Stone
+BOOK GENRE: Fantasy
+AUTHOR NAME: J. K. Rowling
+YEAR OF PUBLISHING: 1997
+=====AUTHOR INFO===== 
+Full Name: Joanne Rowling
+POB: Yate, Gloucestershire, England
+Year of Birth: 1965
+=====================
+BOOK ISBN NUMBER: 978-5-389-07435-4
+
+createBooks has executed.
+Used memory in megabytes: 2.336601 
+The runtime of method createBooks() is 74 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{
+  "title" : "War and Peace",
+  "genre" : "Novel",
+  "authorName" : "L. Tolstoy",
+  "authorInfo" : {
+    "fullName" : "Leo Tolstoy",
+    "placeOfBirth" : "Yasnaya Polyana, Russian Empire",
+    "yearOfBirth" : 1828
+  },
+  "year" : 1867,
+  "isbnnumber" : {
+    "1" : "978-5-699-08860-7"
+  }
+}
+BOOK #2
+{
+  "title" : "Harry Potter and the Philosopher's Stone",
+  "genre" : "Fantasy",
+  "authorName" : "J. K. Rowling",
+  "authorInfo" : {
+    "fullName" : "Joanne Rowling",
+    "placeOfBirth" : "Yate, Gloucestershire, England",
+    "yearOfBirth" : 1965
+  },
+  "year" : 1997,
+  "isbnnumber" : {
+    "2" : "978-5-389-07435-4"
+  }
+}
+
+convertToJSON has executed.
+Used memory in megabytes: 5.645264 
+The runtime of method convertToJSON() is 767 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{
+  "title" : "War and Peace",
+  "genre" : "Novel",
+  "authorName" : "L. Tolstoy",
+  "authorInfo" : {
+    "fullName" : "Leo Tolstoy",
+    "placeOfBirth" : "Yasnaya Polyana, Russian Empire",
+    "yearOfBirth" : 1828
+  },
+  "year" : 1867,
+  "isbnnumber" : {
+    "1" : "978-5-699-08860-7"
+  }
+}
+BOOK #2
+{
+  "title" : "Harry Potter and the Philosopher's Stone",
+  "genre" : "Fantasy",
+  "authorName" : "J. K. Rowling",
+  "authorInfo" : {
+    "fullName" : "Joanne Rowling",
+    "placeOfBirth" : "Yate, Gloucestershire, England",
+    "yearOfBirth" : 1965
+  },
+  "year" : 1997,
+  "isbnnumber" : {
+    "2" : "978-5-389-07435-4"
+  }
+}
+
+convertToJSON has executed.
+Used memory in megabytes: 6.132057 
+The runtime of method convertToJSON() is 50 ms
+
+JACKSON DESERIALIZATION
+
+convertFromJSON has executed.
+Used memory in megabytes: 3.572380 
+The runtime of method convertFromJSON() is 173 ms
+
+initializeBook has executed.
+Used memory in megabytes: 3.067291 
+The runtime of method initializeBook() is 26 ms
+
+initializeBook has executed.
+Used memory in megabytes: 2.776154 
+The runtime of method initializeBook() is 22 ms
+
+BOOK TITLE: War and Peace
+BOOK GENRE: Novel
+AUTHOR NAME: L. Tolstoy
+YEAR OF PUBLISHING: 1867
+=====AUTHOR INFO===== 
+Full Name: Leo Tolstoy
+POB: Yasnaya Polyana, Russian Empire
+Year of Birth: 1828
+=====================
+BOOK ISBN NUMBER: 978-5-699-08860-7
+
+BOOK TITLE: Harry Potter and the Philosopher's Stone
+BOOK GENRE: Fantasy
+AUTHOR NAME: J. K. Rowling
+YEAR OF PUBLISHING: 1997
+=====AUTHOR INFO===== 
+Full Name: Joanne Rowling
+POB: Yate, Gloucestershire, England
+Year of Birth: 1965
+=====================
+BOOK ISBN NUMBER: 978-5-389-07435-4
+
+createBooks has executed.
+Used memory in megabytes: 2.775436 
+The runtime of method createBooks() is 106 ms
+
+JACKSON SERIALIZATION
+BOOK #1
+{
+  "title" : "War and Peace",
+  "genre" : "Novel",
+  "authorName" : "L. Tolstoy",
+  "authorInfo" : {
+    "fullName" : "Leo Tolstoy",
+    "placeOfBirth" : "Yasnaya Polyana, Russian Empire",
+    "yearOfBirth" : 1828
+  },
+  "year" : 1867,
+  "isbnnumber" : {
+    "1" : "978-5-699-08860-7"
+  }
+}
+BOOK #2
+{
+  "title" : "Harry Potter and the Philosopher's Stone",
+  "genre" : "Fantasy",
+  "authorName" : "J. K. Rowling",
+  "authorInfo" : {
+    "fullName" : "Joanne Rowling",
+    "placeOfBirth" : "Yate, Gloucestershire, England",
+    "yearOfBirth" : 1965
+  },
+  "year" : 1997,
+  "isbnnumber" : {
+    "2" : "978-5-389-07435-4"
+  }
+}
+
+convertToJSON has executed.
+Used memory in megabytes: 2.800735 
+The runtime of method convertToJSON() is 50 ms
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

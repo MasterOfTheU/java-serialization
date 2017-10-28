@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testing.MainTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-28T21:19:31" hostname="brain" time="0.278">
+  <properties/>
+  <testcase name="printBooksInfo" classname="testing.MainTest" time="0.112"/>
+  <testcase name="createBooks" classname="testing.MainTest" time="0.082"/>
+  <testcase name="printBooksInfoFailed" classname="testing.MainTest" time="0.084"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

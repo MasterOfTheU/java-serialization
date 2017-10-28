@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="testing.BookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-28T20:45:45" hostname="brain" time="0.014">
+<testsuite name="testing.BookTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-10-28T21:19:30" hostname="brain" time="0.009">
   <properties/>
-  <testcase name="setISBNnumber" classname="testing.BookTest" time="0.014"/>
+  <testcase name="getAuthorName" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setAuthorName" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getISBNnumber" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getYear" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setISBNnumber" classname="testing.BookTest" time="0.006"/>
+  <testcase name="setGenre" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setTitle" classname="testing.BookTest" time="0.0"/>
+  <testcase name="getGenre" classname="testing.BookTest" time="0.001"/>
+  <testcase name="getTitle" classname="testing.BookTest" time="0.0"/>
+  <testcase name="setYear" classname="testing.BookTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
