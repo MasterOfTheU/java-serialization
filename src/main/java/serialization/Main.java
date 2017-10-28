@@ -10,7 +10,6 @@ import static serialization.Metrics.*;
 public class Main {
 
     public static void main(String[] args) throws JsonMappingException, JsonGenerationException {
-
         ArrayList<Book> books = createBooks();
         convertWithJackson(books);
         convertWithOrgJSON(books);
@@ -21,12 +20,16 @@ public class Main {
     public static ArrayList<Book> createBooks() {
         long startTime = System.currentTimeMillis();
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+        int bookCounter = 1;
+
         ArrayList<Book> books = new ArrayList<>();
         BookCreator bc = new BookCreator();
-        books.add(bc.initializeBook("War and Peace", "Novel", "Leo Tolstoy", 1867));
-        books.add(bc.initializeBook("Harry Potter and the Philosopher's Stone", "Fantasy", "J. K. Rowling", 1997));
-        /**The demonstrative usage of constructor without parameters*/
-        books.add(new Book());
+
+        AuthorInfo Tolstoy = new AuthorInfo("Leo Tolstoy", "Yasnaya Polyana, Russian Empire", 1828);
+        AuthorInfo Rowling = new AuthorInfo("Joanne Rowling", "Yate, Gloucestershire, England", 1965);
+
+        books.add(bc.initializeBook("War and Peace", "Novel", "L. Tolstoy", 1867,  Tolstoy, bookCounter++,"978-5-699-08860-7"));
+        books.add(bc.initializeBook("Harry Potter and the Philosopher's Stone", "Fantasy", "J. K. Rowling", 1997, Rowling, bookCounter++, "978-5-389-07435-4"));
         printBooksInfo(books);
 
         printMethodName(methodName);
@@ -44,10 +47,27 @@ public class Main {
             System.out.printf("BOOK GENRE: %s\n", book.getGenre());
             System.out.printf("AUTHOR NAME: %s\n", book.getAuthorName());
             System.out.printf("YEAR OF PUBLISHING: %d\n", book.getYear());
+            printAuthorInfo(book.getAuthorInfo());
+            System.out.printf("=====================\n");
+            System.out.printf("BOOK ISBN NUMBER: %s\n", printISBNnumber(book.getISBNnumber()));
             System.out.println();
         });
     }
 
+    private static void printAuthorInfo(AuthorInfo author) {
+        System.out.printf("=====AUTHOR INFO===== \n");
+        System.out.printf("Full Name: %s\n", author.getFullName());
+        System.out.printf("POB: %s\n", author.getPlaceOfBirth());
+        System.out.printf("Year of Birth: %d\n", author.getYearOfBirth());
+    }
+
+    private static String printISBNnumber(HashMap<Integer, String> ISBNnumber) {
+        String mapValue = "";
+        for ( Map.Entry<Integer, String> entry : ISBNnumber.entrySet()) {
+            mapValue = entry.getValue();
+        }
+        return mapValue;
+    }
     //endregion
 
     //region Converting
