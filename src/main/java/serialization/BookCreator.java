@@ -7,7 +7,7 @@ import static serialization.Metrics.*;
  */
 public class BookCreator {
 
-    public Book initializeBook(String bookTitle, String bookGenre, String bookAuthorName, int bookYear) {
+    public Book initializeBook(String bookTitle, String bookGenre, String bookAuthorName, int yearOfPublication, AuthorInfo authorInfo, int ISBNkey, String ISBNnumber) {
         long startTime = System.currentTimeMillis();
         String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
         Book book = new Book();
@@ -15,7 +15,9 @@ public class BookCreator {
         book.setTitle(bookTitle);
         book.setGenre(bookGenre);
         book.setAuthorName(bookAuthorName);
-        book.setYear(bookYear);
+        book.setYear(yearOfPublication);
+        book.setAuthorInfo(authorInfo);
+        book.setISBNnumber(ISBNkey, ISBNnumber);
 
         printMethodName(methodName);
         gatherPerformance();
