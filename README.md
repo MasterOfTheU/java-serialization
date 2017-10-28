@@ -5,15 +5,14 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/66290c80c082419c9fff03ed37c7beb9)](https://www.codacy.com/app/MasterOfTheU/java-serialization?utm_source=github.com&utm_medium=referral&utm_content=MasterOfTheU/java-serialization&utm_campaign=Badge_Coverage)
 
 ## This repository contains practical examples of parsing objects to and from JSON format using three Java Libraries:
-<p>
     <ol>
-        <li>[Jackson Metrics](#jackson-metrics)Jackson</li>
-        <li>[org.json Metrics](#org.json-metrics)org.json</li>
-        <li>[Google GSON Metrics](#google-gson-metrics)GSON</li>
+        <li>Jackson</li>
+        <li>org.json</li>
+        <li>GSON</li>
     </ol>
-</p>
+
   
-  JSON object examples
+## JSON objects example
 ![objects](https://user-images.githubusercontent.com/15348166/32138676-7da5cc12-bc3f-11e7-8ef1-387e901d64b9.PNG)  
   
     The results of perfomance are given below:
