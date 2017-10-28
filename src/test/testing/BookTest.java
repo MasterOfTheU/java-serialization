@@ -1,11 +1,14 @@
 package testing;
 
+import org.hamcrest.collection.IsMapContaining;
 import org.junit.Test;
 import serialization.Book;
 
 import java.lang.reflect.Field;
+import java.util.HashMap;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 /**
  * Class <b>BookTest</b> tests getter and setter methods from class Book.
@@ -27,7 +30,7 @@ public class BookTest {
         book.setTitle("Anna Karenina");
         Field field = book.getClass().getDeclaredField("title");
         field.setAccessible(true);
-        assertEquals(field.get(book), "Anna Karenina");
+        assertEquals("Anna Karenina", field.get(book));
     }
 
     @Test
@@ -46,7 +49,7 @@ public class BookTest {
         book.setGenre("Novel");
         Field field = book.getClass().getDeclaredField("genre");
         field.setAccessible(true);
-        assertEquals(field.get(book), "Novel");
+        assertEquals("Novel", field.get(book));
     }
 
     @Test
@@ -65,7 +68,7 @@ public class BookTest {
         book.setAuthorName("John Ronald Reuel Tolkien");
         Field field = book.getClass().getDeclaredField("authorName");
         field.setAccessible(true);
-        assertEquals(field.get(book), "John Ronald Reuel Tolkien");
+        assertEquals("John Ronald Reuel Tolkien", field.get(book));
     }
 
     @Test
@@ -83,7 +86,28 @@ public class BookTest {
         book.setYear(1990);
         Field field = book.getClass().getDeclaredField("year");
         field.setAccessible(true);
-        assertEquals(field.get(book), 1990);
+        assertEquals(1990, field.get(book));
+    }
+
+    @Test
+    public void getISBNnumber() throws NoSuchFieldException, IllegalAccessException {
+        final Book book = new Book();
+        book.setISBNnumber(23, "978-5-17-093923-7");
+        Field field = book.getClass().getDeclaredField("ISBNnumber");
+        field.setAccessible(true);
+        HashMap<Integer, String> testHashMap = new HashMap<>();
+        testHashMap.put(23, "978-5-17-093923-7");
+        assertEquals(field.get(book), testHashMap);
+    }
+
+    @Test
+    public void setISBNnumber() throws NoSuchFieldException, IllegalAccessException {
+        final Book book = new Book();
+        book.setISBNnumber(12, "978-0833030474");
+        Field field = book.getClass().getDeclaredField("ISBNnumber");
+        field.setAccessible(true);
+        assertThat(book.getISBNnumber(), IsMapContaining.hasEntry(12, "978-0833030474"));
+        assertThat(book.getISBNnumber(), IsMapContaining.hasKey(12));
     }
 
 }
