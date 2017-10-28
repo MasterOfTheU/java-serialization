@@ -1,6 +1,7 @@
 package serialization;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 
@@ -17,7 +18,7 @@ public class GsonMapping {
 
         System.out.println("GOOGLE GSON SERIALIZATION");
         ArrayList<String> jsonStrings = new ArrayList();
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
         books.forEach(book -> {
             String jsonString = gson.toJson(book);
