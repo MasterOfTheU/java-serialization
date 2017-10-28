@@ -1,24 +1,25 @@
 package serialization;
 
+import java.util.HashMap;
+
 public class Book {
 
     private String title;
     private String genre;
     private String authorName;
-    private int year;
+    private int yearOfPublication;
+    private AuthorInfo authorInfo;
+    private HashMap<Integer, String> ISBNnumber = new HashMap<>();
 
-    public Book() {
-        this.title = "Unknown";
-        this.genre = "Unknown";
-        this.authorName = "Unknown";
-        this.year = 0;
-    }
+    public Book() {}
 
-    public Book(String title, String genre, String authorName, int year) {
+    public Book(String title, String genre, String authorName, int yearOfPublication, AuthorInfo authorInfo, int ISBNkey, String ISBNnumber) {
         this.title = title;
         this.genre = genre;
         this.authorName = authorName;
-        this.year = year;
+        this.yearOfPublication = yearOfPublication;
+        this.authorInfo = authorInfo;
+        this.ISBNnumber.put(ISBNkey, ISBNnumber);
     }
 
     public String getTitle() {
@@ -46,10 +47,26 @@ public class Book {
     }
 
     public int getYear() {
-        return year;
+        return yearOfPublication;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setYear(int yearOfPublication) {
+        this.yearOfPublication = yearOfPublication;
+    }
+
+    public AuthorInfo getAuthorInfo() {
+        return authorInfo;
+    }
+
+    public void setAuthorInfo(AuthorInfo authorInfo) {
+        this.authorInfo = authorInfo;
+    }
+
+    public HashMap<Integer, String> getISBNnumber() {
+        return ISBNnumber;
+    }
+
+    public void setISBNnumber(int ISBNkey, String ISBNnumber) {
+        this.ISBNnumber.put(ISBNkey, ISBNnumber);
     }
 }
